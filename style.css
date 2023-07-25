@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.container {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+.logo-container {
+  text-align: left;
+  opacity: 0; /* Começa invisível para a animação */
+  animation: fadeInLogo 1s ease-in-out forwards; /* Animação de fade-in */
+}
+
+.logo-container img {
+  width: 60px;
+  height: auto;
+}
+
+@keyframes fadeInLogo {
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  margin-top: 0;
+  color: #007BFF;
+  font-size: 32px;
+  margin-bottom: 20px;
+  opacity: 0; /* Começa invisível para a animação */
+  animation: fadeInTitle 1s ease-in-out forwards; /* Animação de fade-in */
+}
+
+@keyframes fadeInTitle {
+  to {
+    opacity: 1;
+  }
+}
+
+.upload-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  opacity: 0; /* Começa invisível para a animação */
+  animation: fadeInUpload 1s ease-in-out forwards; /* Animação de fade-in */
+}
+
+@keyframes fadeInUpload {
+  to {
+    opacity: 1;
+  }
+}
+
+.custom-file-upload {
+  padding: 12px 24px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-file-upload img {
+  margin-left: 10px;
+}
+
+.custom-file-upload:hover {
+  background-color: #0056b3;
+}
+
+#fileInput {
+  display: none;
+}
+
+#result {
+  font-size: 24px;
+  color: #007BFF;
+  font-weight: bold;
+  margin-top: 20px;
+  border-top: 2px solid #007BFF;
+  padding-top: 20px;
+  opacity: 0; /* Começa invisível para a animação */
+  animation: fadeInResult 1s ease-in-out forwards; /* Animação de fade-in */
+}
+
+@keyframes fadeInResult {
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+}
